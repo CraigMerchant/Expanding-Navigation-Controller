@@ -1,1 +1,19 @@
 Attempting to add more animations to UINavigationController, just trying ideas, any input is welcome.
+
+To use import the .h
+
+#import "UINavigationController+animatedNavController.h"
+
+And then call
+
+[self.navigationController pushWithAnim:detailViewController inView:self.view];
+
+
+or
+
+[self.navigationController pushWithAnim:detailViewController inView:self.view withAnchor:CGPointMake(x,y)];
+
+
+to pop a view call
+
+[self.navigationController shrinkLastViewController];
